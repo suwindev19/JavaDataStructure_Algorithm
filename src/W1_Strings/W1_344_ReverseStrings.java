@@ -1,10 +1,10 @@
-package W_1_Strings;
+package W1_Strings;
 
 /**
  * Leetcode: 344 Reverse String
  */
 
-public class D1_ReverseStrings {
+public class W1_344_ReverseStrings {
     public static void main(String[] args) {
 //        System.out.println(reverse("oiishiiramen"));
         System.out.println(reverse_TwoPointersA(new char[]{'j', 'a', 'p', 'a', 'n'}));

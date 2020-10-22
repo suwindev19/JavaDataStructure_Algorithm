@@ -1,11 +1,11 @@
-package W_1_Strings;
+package W1_Strings;
 
 /**
  * 657. Robot Return to Origin
  * https://leetcode.com/problems/robot-return-to-origin/
  */
 
-public class D1_RobotReturnOrigin {
+public class W1_657_RobotReturnOrigin {
     public static void main(String[] args) {
         System.out.println(robotTo_Origin_1("LRLRUDUDDDU"));
         System.out.println(robotTo_Origin_10("LRLRUDUDDDUU"));

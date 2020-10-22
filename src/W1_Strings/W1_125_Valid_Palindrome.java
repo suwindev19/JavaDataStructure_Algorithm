@@ -1,13 +1,13 @@
-package W_1_Strings;
+package W1_Strings;
 
 /**
  * 125. Valid Palindrome
  * https://leetcode.com/problems/valid-palindrome/
  */
-public class D1_Valid_Palindrome {
+public class W1_125_Valid_Palindrome {
     public static void main(String[] args) {
-        System.out.println(isPalindrome_1("A man, a plan, a canal: Panama"));
-        System.out.println(isPalindrome_2("Tokyo != Osaka"));
+        System.out.println(isPalindrome_0("A man, a plan, a canal: Panama"));
+        System.out.println(isPalindrome_0("Tokyo != Osaka"));
 
     }
 
@@ -23,6 +23,20 @@ public class D1_Valid_Palindrome {
      * Time : O(n)
      * Space : O(1)
      */
+    // O(n^2) time | O(n) space
+    public static boolean isPalindrome_0(String s){
+        String reversed = ""; // created in heap memory
+        for(int i = s.length()-1; i >= 0; i-- ){ // iterate s string backwards and put it in reversed empty string progressively therefore O(n2)
+            reversed += s.charAt(i);
+        }
+        return reversed.equals(s);
+    }
+    // Optimised approach 1
+    // O(n), O(n)
+//    public static boolean isPalindrome_3(String s){
+//        char[] st = s.toCharArray();
+//
+//    }
 
     public static boolean isPalindrome_1(String s){
         int i = 0;
@@ -46,7 +60,7 @@ public class D1_Valid_Palindrome {
     // alphanumeric a-Z, A-Z, 0-9
     // O(n)
     // Skip invalid characters
-
+    // Use two pointers technique
     public static boolean isPalindrome_2(String s){
         // empty string to add only valid alphanumeric characters
         String fixedString = "";

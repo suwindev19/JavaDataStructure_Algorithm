@@ -1,33 +1,47 @@
 # Java - Data Structure and Algorithms and LeetCode Problems
 
-This repo contains the collection of java notes and leetcode coding challenges exercises that I am currently studying to learn more about Data Structure and Algorithms. This repo is being updated progressively.
+This repo contains the collection of java collections notes and leetcode coding challenges exercises that I am currently studying to learn more about Data Structure and Algorithms. This repo will be updated progressively.
 
 <img src="./img/dsa.png" alt="Java Coding" width="600"/>
 
 ## Coding Challenges
 
-The data structure and algorithms concepts and theories, and java methods, core java learnt from each session are detailed under each **_Weekly Learning Summary_**.
+The data structure and algorithms concepts and theories, and java methods, core java learnt from each week are detailed under each **_Weekly Learning Summary_**.
 
 **Table of Contents**
 
 ```
-
--------------------------------
-Week -1 Strings
-    -Day 1: Reverse String
-    -Day 1: Valid Palindrome
-    -Day 1: Vaccum Cleaner Path
--------------------------------
-Week -2
--------------------------------
+      -------------------------------
+      Week - 1 W1_Strings
+           1. 344. Reverse String
+           2. 125. Valid Palindrome
+           3. 657. Robot Return to Origin
+           4. 520. Detect Capital
+           5. 67. Add Binary
+           6. 14. Longest Common Prefix
+           7. 680. Valid Palindrome II
+      -------------------------------
+      Week -2 Array and ArrayList 
+      -------------------------------
 
 ```
 
 ## Weekly Learning Summary
 
-### Week -1 Strings (Oct 2020)
+### Week -1 W1_Strings 
 
-### Java Strings Methods
+In this week, the data structure is **W1_Strings**. Therefore 7 leetcode easy String questions were selected for practice. The problems numbers and links are below.
+
+1. [344. Reverse String](https://leetcode.com/problems/reverse-string/)
+2. [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
+3. [657. Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)
+4. [520. Detect Capital](https://leetcode.com/problems/detect-capital/)
+5. [67. Add Binary](https://leetcode.com/problems/add-binary/)
+6. [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
+7. [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+
+The coding solutions are in the [String folder](src/W1_Strings).
+### Java W1_Strings Methods
 
 - [String methods](https://www.tutorialspoint.com/java/lang/java_lang_string.htm)
 
@@ -63,9 +77,12 @@ Week -2
     }
 ```
 
+
 ### References
 
 - Java.lang.Character.isLetterOrDigit() Method, https://www.tutorialspoint.com/java/lang/character_isletterordigit.htm
 - Java tutorial: Learn Java Programming with examples, https://beginnersbook.com/java-tutorial-for-beginners-with-examples/
--
--
+- Nick White YouTube channel, https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-
+- Kevin Naughton Jr YouTubr channel, https://www.youtube.com/c/KevinNaughtonJr/playlists
+- Programming Notes, https://www3.ntu.edu.sg/home/ehchua/programming/index.html#Java
+  

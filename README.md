@@ -32,13 +32,14 @@ The data structure and algorithms concepts and theories, and java methods, core 
 
 In this week, the data structure is **W1_Strings**. Therefore 7 leetcode easy String questions were selected for practice. The problems numbers and links are below.
 
-1. [344. Reverse String](https://leetcode.com/problems/reverse-string/)
-2. [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome/)
-3. [657. Robot Return to Origin](https://leetcode.com/problems/robot-return-to-origin/)
-4. [520. Detect Capital](https://leetcode.com/problems/detect-capital/)
-5. [67. Add Binary](https://leetcode.com/problems/add-binary/)
-6. [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)
-7. [680. Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/)
+1. <a href="https://leetcode.com/problems/reverse-string/" target="_blank">344. Reverse String</a>
+2. <a href="https://leetcode.com/problems/valid-palindrome/" target="_blank">125. Valid Palindrome</a>
+3. <a href="https://leetcode.com/problems/robot-return-to-origin/" target="_blank">657. Robot Return to Origin</a>
+4. <a href="https://leetcode.com/problems/detect-capital/" target="_blank">520. Detect Capital</a>
+5. <a href="https://leetcode.com/problems/add-binary/" target="_blank">67. Add Binary</a>
+6. <a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank">14. Longest Common Prefix</a>
+7. <a href="https://leetcode.com/problems/valid-palindrome-ii/" target="_blank">680. Valid Palindrome II</a>
+
 
 The coding solutions are in the [String folder](src/W1_Strings).
 ### Java W1_Strings Methods

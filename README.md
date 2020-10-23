@@ -12,7 +12,7 @@ The data structure and algorithms concepts and theories, and java methods, core 
 
 ```
       -------------------------------
-      Week - 1 W1_Strings
+      Week 1: Strings
            1. 344. Reverse String
            2. 125. Valid Palindrome
            3. 657. Robot Return to Origin
@@ -26,9 +26,7 @@ The data structure and algorithms concepts and theories, and java methods, core 
 
 ```
 
-## Weekly Learning Summary
-
-### Week -1 W1_Strings 
+## Week - 1: Strings 
 
 In this week, the data structure is **W1_Strings**. Therefore 7 leetcode easy String questions were selected for practice. The problems numbers and links are below.
 
@@ -40,9 +38,19 @@ In this week, the data structure is **W1_Strings**. Therefore 7 leetcode easy St
 6. <a href="https://leetcode.com/problems/longest-common-prefix/" target="_blank">14. Longest Common Prefix</a>
 7. <a href="https://leetcode.com/problems/valid-palindrome-ii/" target="_blank">680. Valid Palindrome II</a>
 
+**Addtional String Problems**
+
+8. Caesar Cipher Encryption 
+  - Algorithm Pseudocode 
+    - <img src="./img/strings_Caesar_cipher.PNG" alt="strings_Caesar_cipher" width="700"/>
+9.  
+
 
 The coding solutions are in the [String folder](src/W1_Strings).
 ### Java W1_Strings Methods
+
+- String in Java is a Class, but it is almost used like primitive data types such as int, float, long, etc.
+- String is a collection of characters. 
 
 - [String methods](https://www.tutorialspoint.com/java/lang/java_lang_string.htm)
 
@@ -77,7 +85,23 @@ The coding solutions are in the [String folder](src/W1_Strings).
             }
     }
 ```
-
+- Commonly Used methods 
+  - int length()
+  - String toLowerCase()
+  - String toUpperCase()
+  - String trim()
+  - String substring(int begin)
+  - String substring(int begin, int end)
+  - String replace(char old, char new)
+  - boolean startsWith(String s)
+  - boolean endsWith(String s)
+  - char charAt(int index)
+  - int indexOf(String s)
+  - int lastIndexOf(String s)
+  - boolean equals(String s)
+  - boolean equalsIgnoreCase(String s)
+  - int compareTo(String s)
+  - String valueOf(int i)
 
 ### References
 

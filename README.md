@@ -43,7 +43,9 @@ In this week, the data structure is **W1_Strings**. Therefore 7 leetcode easy St
 8. Caesar Cipher Encryption 
   - Algorithm Pseudocode 
     - <img src="./img/strings_Caesar_cipher.PNG" alt="strings_Caesar_cipher" width="700"/>
-9.  
+9. Pattern Matching
+  - Algorithm Pseudocode 
+    - <img src="./img/strings_pattern_matching.PNG" alt="strings_pattern_matching" width="700"/> 
 
 
 The coding solutions are in the [String folder](src/W1_Strings).

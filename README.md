@@ -21,7 +21,13 @@ The data structure and algorithms concepts and theories, and java methods, core 
            6. 14. Longest Common Prefix
            7. 680. Valid Palindrome II
       -------------------------------
-      Week -2 Array and ArrayList 
+      Week 2: Array and ArrayList 
+
+           1. Two Sum
+
+
+
+
       -------------------------------
 
 ```
@@ -104,6 +110,13 @@ The coding solutions are in the [String folder](src/W1_Strings).
   - boolean equalsIgnoreCase(String s)
   - int compareTo(String s)
   - String valueOf(int i)
+
+
+## Week - 2: Arrays
+
+In this week, the data structure is **Arrays**. Therefore 7 leetcode easy array questions were selected for practice. The problems numbers and links are below. (In progress)
+
+1. <a href="https://leetcode.com/problems/two-sum/" target="_blank">1. Two Sum</a>
 
 ### References
 

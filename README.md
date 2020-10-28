@@ -117,6 +117,8 @@ The coding solutions are in the [String folder](src/W1_Strings).
 In this week, the data structure is **Arrays**. Therefore 7 leetcode easy array questions were selected for practice. The problems numbers and links are below. (In progress)
 
 1. <a href="https://leetcode.com/problems/two-sum/" target="_blank">1. Two Sum</a>
+  - Algorithm Pseudocode 
+    - <img src="./img/array_twoSum.PNG" alt="array_twoSum" width="700"/> 
 
 ### References
 

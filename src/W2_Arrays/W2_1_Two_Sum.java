@@ -1,6 +1,8 @@
 package W2_Arrays;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -26,12 +28,18 @@ import java.util.HashMap;
  * Output: [0,1]
  */
 public class W2_1_Two_Sum {
-    // not printing the result, but the object ?
+
     public static void main(String[] args) {
         int[] nums = {2, 7, 11, 15};
         int target = 9;
-        System.out.println(twoSum_ON2(nums, target));
-        System.out.println(twoSum_Hashtable(nums, target));
+        int[] result1 =  twoSum_ON2(nums, target);
+        System.out.print(result1[0]+ " " + result1[1]);
+        System.out.println();
+        int[] result2 =  twoSum_ON2(nums, target);
+        System.out.print(result2[0]+ " " + result2[1]);
+        System.out.println();
+        int[] result3 = twoSum_Map(nums, target);
+        System.out.print(result3[0]+ " " + result3[1]);
     }
     // Brainstorming
     // Approach 1: Use two for loops, Traverse the array twice. First go through the array. And then add each number when traversing through the second array and find sum
@@ -65,17 +73,30 @@ public class W2_1_Two_Sum {
 
     public static int[] twoSum_Hashtable(int[] nums, int target){
         int[] result = new int[2];
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> visited = new HashMap<Integer, Integer>();
         for(int i = 0; i < nums.length; i ++){
             int difference = target - nums[i];
-            if(map.containsKey(difference)){
+            if(visited.containsKey(difference)){
                 result[0] = i;
-                result[1] = map.get(difference);
+                result[1] = visited.get(difference);
                 return result;
             }
-            map.put(nums[i], i);
+            visited.put(nums[i], i);
         }
         return result;
+    }
+
+
+    public static int[] twoSum_Map(int[] nums, int target){
+        Map<Integer, Integer> visitedNumbers = new HashMap<>();
+        for(int i = 0; i < nums.length; i++){
+            int y = target - nums[i];
+            if(visitedNumbers.containsKey(y)){
+                return new int[] {i, visitedNumbers.get(y)};
+            }
+            visitedNumbers.put(nums[i], i);
+        }
+        return new int[] {-1,-1};
     }
 
     // Approach 3: Sort the array
@@ -91,8 +112,21 @@ public class W2_1_Two_Sum {
     // depends on the sum result, move either the left pointer up or move the right pointer down
     // time complexity O(n logn) | Space complexity O(1)
 
-    public static void twoSum_ConstantSpace(){
-
+    public static int[] twoSum_ConstantSpace(int[] array, int targetSum){
+        Arrays.sort(array);
+        int left_pointer = 0;
+        int right_pointer = array.length -1;
+        while(left_pointer < right_pointer){
+            int currentSum = array[left_pointer] + array[right_pointer];
+            if(currentSum == targetSum){
+                return new int[] {array[left_pointer], array[right_pointer]};
+            } else if(currentSum < targetSum){
+                left_pointer++;
+            }else if(currentSum > targetSum){
+                right_pointer--;
+            }
+        }
+        return new int[0];
     }
 
 

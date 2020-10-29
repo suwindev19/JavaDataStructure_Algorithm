@@ -9,9 +9,20 @@ import java.util.function.Predicate;
 
 public class W1_520_DectectCapital {
     public static void main(String[] args) {
-        System.out.println(detectCapitalUse_2("USA"));
-        System.out.println(detectCapitalUse_2("FlaG"));
-        System.out.println(detectCapitalUse_2("leetcode"));
+//        System.out.println(detectCapitalUse_2("USA"));
+//        System.out.println(detectCapitalUse_2("FlaG"));
+//        System.out.println(detectCapitalUse_2("leetcode"));
+        System.out.println(detectCapital_0("KicK Start"));
+    }
+
+    public static boolean detectCapital_0(String word){
+        char[] detectcapitals = word.toCharArray();
+        for(int i = 0; i < detectcapitals.length ; i ++){
+            if(!Character.isUpperCase(detectcapitals[i]) || !Character.isLowerCase(detectcapitals[i]) || !Character.isUpperCase(detectcapitals[0])){
+                return false;
+            }
+        }
+        return true;
     }
 
     // Consider edge cae

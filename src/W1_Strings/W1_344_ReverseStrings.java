@@ -6,8 +6,9 @@ package W1_Strings;
 
 public class W1_344_ReverseStrings {
     public static void main(String[] args) {
-//        System.out.println(reverse("oiishiiramen"));
-        System.out.println(reverse_TwoPointersA(new char[]{'j', 'a', 'p', 'a', 'n'}));
+        System.out.println(reverse_TwoPointersA(new char[]{'j', 'a', 'p', 'a', 'n'}));;
+        System.out.println(reverse_TwoPointers_0(new char[]{'j', 'a', 'p', 'a', 'n'}));
+        System.out.println(reverse("Japan"));
     }
 
 
@@ -25,6 +26,20 @@ public class W1_344_ReverseStrings {
 
     // Time: O(n)
     // Use two pointers techniques to get O(1) space complexity
+
+    public static char[] reverse_TwoPointers_0(char[] s){
+        int a_pointer = 0;
+        int b_pointer = s.length-1;
+        while (a_pointer <= b_pointer){
+            char temp = s[a_pointer];
+            s[a_pointer] = s[b_pointer];
+            s[b_pointer] = temp;
+            a_pointer++;
+            b_pointer--;
+        }
+        return s;
+    }
+
     public static char[] reverse_TwoPointers(char[] s){
         int a_pointer = 0;
         int b_pointer = s.length-1;

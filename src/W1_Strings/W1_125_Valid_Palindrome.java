@@ -68,6 +68,7 @@ public class W1_125_Valid_Palindrome {
             if(Character.isLetterOrDigit(c)){
                 fixedString += c;
             }
+
         }
         fixedString = fixedString.toLowerCase();
         int a_pointer = 0;

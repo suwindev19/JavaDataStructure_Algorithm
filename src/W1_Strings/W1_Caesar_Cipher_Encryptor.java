@@ -11,8 +11,8 @@ package W1_Strings;
     // Algorithm
     // create an array with elements from the given plainText
     // each letter - shift the letter by the given key
-    // Approach 1 : Using Unicode value
-    // use unicode value, a = 97 , b = 98, c = 99, ..., z = 122
+    // Approach 1 : Using ascii value Base 10
+    // use ascii value, a = 97 , b = 98, c = 99, ..., z = 122
     // To get the shifted letter, use the original letter and add shift key to get the encrypted letter
     // e.g. if the letter is z (unicode value is 122) , if shifts by 3, c
     // To wrap around the alphabet, use mod operator

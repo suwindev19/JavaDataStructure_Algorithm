@@ -20,14 +20,17 @@ The data structure and algorithms concepts and theories, and java methods, core 
            5. 67. Add Binary
            6. 14. Longest Common Prefix
            7. 680. Valid Palindrome II
+          
+          Addtional String Problems
+              Caesar Cipher Encryption 
+              Pattern Matching
+
       -------------------------------
       Week 2: Array and ArrayList 
 
            1. Two Sum
 
-
-
-
+           Array Practice Questions x 15 
       -------------------------------
 
 ```
@@ -68,7 +71,7 @@ In this week, the data structure is **W1_Strings**. Therefore 7 leetcode easy St
 
 8. Caesar Cipher Encryption 
   - Algorithm Pseudocode 
-    - <img src="./img/strings_Caesar_cipher.PNG" alt="strings_Caesar_cipher" width="700"/>
+    - <img src="./img/strings_Caesar_cipher.PNG" alt="strings_Caesar_cipher"/>
 9. Pattern Matching
   - Algorithm Pseudocode 
     - <img src="./img/strings_pattern_matching.PNG" alt="strings_pattern_matching" width="700"/> 
@@ -146,9 +149,38 @@ The coding solutions are in the [String folder](src/W1_Strings).
 
 In this week, the data structure is **Arrays**. Therefore 7 leetcode easy array questions were selected for practice. The problems numbers and links are below. (In progress)
 
+
+**LeetCode**
 1. <a href="https://leetcode.com/problems/two-sum/" target="_blank">1. Two Sum</a>
   - Algorithm Pseudocode 
-    - <img src="./img/array_twoSum.PNG" alt="array_twoSum" width="700"/> 
+    - <img src="./img/array_twoSum.PNG" alt="array_twoSum" width="700"/>
+    - 
+**Array Practice Questions**
+
+*Single Dimensional Array*
+
+1. Find the largest element in the array 
+2. Find an element in the array 
+3. Sort an array in ascending order
+4. Display second largest element in the array with or without sorting the array 
+5. Reverse the elements of the array
+
+*Two Dimensional Array* 
+
+6. Add, sub 2D array of 2 x 2 matrix
+7. Transpose a matrix 
+8. Add all the elements of the matrix 
+
+*Miscellaneous*
+
+9. Find the cube of a number
+10. Find the factorial of a number
+11. Reverse the digits of a number
+12. Check given string is palindrome or not 
+13. Check given number is even or odd 
+14. Generate 'n' Fibonacci numbers
+15. Check given numbers is prime or not
+16. Swap two numbers
 
 ### References
 

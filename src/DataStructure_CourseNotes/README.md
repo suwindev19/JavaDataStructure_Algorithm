@@ -1,24 +1,28 @@
-# Java - Data Structure and Algorithms YouTube course by William Fiest
+# Java - Data Structure and Algorithms Udemy course by Holczer
 
-This repo contains the notes and java code files I have taken while doing the [Data Structure and Algorithm course by William Fiest](https://www.youtube.com/watch?v=RBSGKlAvoiM). This is his's [GitHub repo](https://github.com/williamfiset/Algorithms/tree/master/src/main/java/com/williamfiset/algorithms).
+This repo contains the notes and java code files I have taken while doing the [Data Structure and Algorithm in Java by Holczer Balazs](https://www.udemy.com/user/holczerbalazs/). This is his's [udmey course link](https://www.udemy.com/course/algorithms-and-data-structures/).
 
 
-<img src="./../../img/williamFiset_dataStructure_Course.png" alt="williamFiset_dataStructure_Course" width="600"/>
+<img src="./../../img/dataStructure_CourseNotes.png" alt="dataStructure_CourseNotes" width="600"/>
 
 
 **Table of Contents**
 
 ```
       -------------------------------
-      Section 1 : Introduction 
+      Introduction
 
-      Section 2 : Static and Dymaic Arrays
+      Arrays
+
+      Arrays Interview Questions
+
+      Linked Lists
 
       -------------------------------
 
 ```
 
-## Section 2 : Static and Dynamic Arrays
+## Arrays
 
 - **Arrays :** Fundamental building blocks for all other data Structures
   - There are two types of Arrays: Static and Dynamic Arrays
@@ -74,10 +78,106 @@ This repo contains the notes and java code files I have taken while doing the [D
 - **Why is it important that we grow the size of the dynamic array exponentially when resizing?**
   - It is to keep the time complexity of insertions O(1). If we grow the array at an exponential rate, the cost of inserting as well as resizing becomes neglibigle.
 
+
+## Arrays Arrays Interview Questions
+
+
+## Linked Lists
+
+**A Single node**
+- contains data -> integer, double or custom object
+- contains a reference pointing to the next node in the linked list
+- Each node is composed of a data and a reference/ link to the next node in the sequence.
+- Simple and very common data structure!
+- They can be used to implement several other common data types: stacks, queues
+- Simple linked lists by themselves do not allow random acccess to the data , therefore you cannot use indexes to get them.
+- Many basic operations such as obtaining the last node of the list or finding a node that contains a given data or locating the place where a new node should be inserted - requires sequential scanning of most or all of the list elements
+
+
+***Advantages***
+- linked lists are dynamic data structures (array are not!)
+- It can allocate the needed memory in run time
+- Very efficient if we want to manipulate the first elements
+- Easy implementation
+- can store  items with different sizes : array assumes every element to be exactly the same
+- It is easier for a linked list to grow organically. An array' size needs to be known ahead of time or re-created when it needs to grow
+
+
+***Disadvantages***
+- Waste memory because of references
+- Node in a linked list must be read in order from the beginning as linked lists have sequential access (array items can be reached via indexes in O(1) time !
+- Difficulties arise in Linked Lists when it comes to reverse traversing.
+- Singly linked list are extremely difficult to nagivate backwards
+- Solution: Doubly linked lists -> easier to read, but memory is wasted in allocating space for a back pointer
+
+### Linked List Operations
+
+- inserting items at the beginning of the linked list
+    - very simple, you just have to update the references -> O(1) Time complexity
+    - linkedList.insertAtStart(10); 10 Null, insert 4 , point to 10 , set the pointer point to the next node
+    - Array is great for random access
+- inserting items at the end of the Linked List
+    - You have to traverse the whole linked list to find the last node
+    - How do you find the last node?
+    - You know that the last node is pointing to NULL
+    - You have to update the references when you get there O(n) Time
+    - linkedList.insertAtEnd(25)
+    - 12, 4, 123, -7, 10 , null
+    - root of the node is 12. Have to go to the last node. Keep traversing until the pointer is pointing to null
+    - 10 needs to point to item to be inserted (25) therefore O(1) + O(n) = O(n)
+
+- Removing at the beginning
+    - removing item at the beginning of the list is always very fast
+    - you do not have to search the item
+    - you have to update the references accordingly
+    - O(1)
+    - linkedList.removeStart()
+- Removing at the given point
+    - Search for the given item (which may take a lot of time
+    - if the item is at the end of the list, O(n)
+    - linkedList.reove(10)
+
+- Doubly Linked List
+    - We can get from 4 to 25 because we just have to hop to the next node.
+    - Node class has two references, one pointing to the next node, one pointing to the previous node
+    - It is not memory friendly, you have to store lots of references
+    - But there is not need to track the previous node during traversal
+
+
+### Linked List vs Array
+**Searching**
+  - Search operation yields the same result for both data structure
+  - ArrayList search operation is pretty fast compared to LinkedList search operation
+  - You can use random access arrays : getItem( int index) which is O(1) Time
+  - LinkedList performance is O(n) Time
+  - WHy?
+  - ArrayList maintains index based system for its elment as it uses array data structure implicitly which makes it faster for searching an element in the list
+  - On the other hand LinkedList requires the traversal through all the items for searching an element
+
+**Deletion**
+  - LinkedList remove operation takes O(1) time if we remove items from the beginning and usually this is the case
+  - ArrayList : removing first element ( so at the beginning) takes O(n) time, removing the last item takes O(1) times
+  - But on average, we have to reconstruct the array when removing
+  - Therefore in conclusion, linkedlist is better for this option
+  - Why?
+  - Linked List basically operates with pointers : removal only requires change in the pointer location which can be done very fast
+  
+**Memory Management**
+  - Arrays do not need any extra memory
+  - LinkedList do need extra memory because of references / pointers
+  - In this aspect, arrays are better, they are memory friendly.
+
+| Operation   |            LinkedList  |            Arrays|
+|---|---|---|
+|Insert at the start |    O(1)  |                   O(n)|
+|Insert at the end |      O(n)   |                  O(1)|
+|Waste space     |        O(n)  |                   0|
+
+
 ### References
 
-- William Fiset, Algorithms GitHub repository, https://github.com/williamfiset/Algorithms/tree/master/src/main/java/com/williamfiset/algorithms
-- Data Structure and Algorithm course by William Fiest, https://www.youtube.com/watch?v=RBSGKlAvoiM
+- Data Structures in Java - Part I (+INTERVIEW QUESTIONS) , https://www.udemy.com/course/algorithms-and-data-structures/
+- 
 - 
  
   

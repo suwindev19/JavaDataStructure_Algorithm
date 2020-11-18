@@ -2,7 +2,7 @@ package DataStructure_CourseNotes.week1;
 
 public class LinkedListDriver {
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
+        LinkedList1 linkedList = new LinkedList1();
         linkedList.insertAtStart(10);
         linkedList.insertAtStart(20);
         linkedList.insertAtStart(30);

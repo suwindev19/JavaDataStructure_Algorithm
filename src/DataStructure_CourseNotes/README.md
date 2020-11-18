@@ -10,14 +10,33 @@ This repo contains the notes and java code files I have taken while doing the [D
 
 ```
       -------------------------------
-      Introduction
+      1.  Introduction
+          ============
+      2.  Arrays
+          =======
 
-      Arrays
+      3.  Arrays Interview Questions
+          ==========================
 
-      Arrays Interview Questions
+      4.  Linked Lists
+          ============
+          A Single node
+              Advantages
+              Disadvantages
+          Linked List Operations
+          Linked List vs Array
+              Searching
+              Deletion
+              Memory Management
+          Interface
+              Why and When to use Interface?
+          Doubly Linked Lists
+              Advantages of Doubly Linked List
+          Collectoins
+          Real World practical applications of Linked List
 
-      Linked Lists
-
+      5.  Linked Lists Interview Questions
+          ================================
       -------------------------------
 
 ```
@@ -77,11 +96,7 @@ This repo contains the notes and java code files I have taken while doing the [D
     - If adding another element will exceed the capacity, then create a new static array with twice the capacity and copy the original elements into it.
 - **Why is it important that we grow the size of the dynamic array exponentially when resizing?**
   - It is to keep the time complexity of insertions O(1). If we grow the array at an exponential rate, the cost of inserting as well as resizing becomes neglibigle.
-
-
 ## Arrays Arrays Interview Questions
-
-
 ## Linked Lists
 
 **A Single node**
@@ -109,6 +124,7 @@ This repo contains the notes and java code files I have taken while doing the [D
 - Difficulties arise in Linked Lists when it comes to reverse traversing.
 - Singly linked list are extremely difficult to nagivate backwards
 - Solution: Doubly linked lists -> easier to read, but memory is wasted in allocating space for a back pointer
+
 
 ### Linked List Operations
 
@@ -174,9 +190,120 @@ This repo contains the notes and java code files I have taken while doing the [D
 |Waste space     |        O(n)  |                   0|
 
 
+**Interface**
+- Interface is another way to achieve abstraction. 
+- An interface is a completely abstract class that is used to group related methods with empty bodies.
+- To access the interface methods, the interface must be implemented by another class with *implements* keybord.
+- Interface cannot be used to create objects. 
+- Interface does not have body.
+- On implementation of an interface, you must override all of its methods. 
+- Interface methods are by default abstract and public.
+- Interface attributes are by default public, static and final. 
+- Interface cannot contain a constructor. 
+- 
+
+**Why and When to use Interface?**
+- To achieve security - hide certain details and only show the important details of an object (interface)
+- You can achieve multiple interitance in Java via interface and implement multiple interfaces.
+
+
+**Doubly Linked Lists**
+- Doubly linked list are composed of nodes and references / pointeres from one node to the other!!
+- The last and first references are pointing to a NULL
+- You can access to the head
+- You can access to tail as well.
+- Single node
+  - contains data -> integer, double or custom object
+  - contains a reference pointing to the next node in the linked list
+  - contains a reference pointing to the previous node in the linked list
+- class Node {
+  - data 
+  - Node nextNode
+  - Node previousNode
+- }
+- Singly Linked List
+  - can only access from head ONLY => 12, 4, 123, -7, 25, NULL 
+  - Time O(n)
+
+  ```
+      removeSingle(Node node, Node previousNode){
+        tempNode = head;
+        while (tempNode != null){
+          if(tempNode == node){
+            previousNode.nextNode = tempNode.nextNode;
+            tempNode = null;
+            return;
+          }
+          previousNode = tempNode;
+          tempNode = tempNode.nextNode;
+        }
+      }
+  ```
+- Doubly Linked List
+  - 7, 1, 10, -2, 2 
+  - You don't need to traverse through the list
+  - If you know the node you want to get rid of, you can update the reference because you can access the previous node with reference!
+
+    ```
+    removeDouble(Node node){
+      node.previousNode.nextNode = node.nextNode;
+      node.nextNode.previousNode = node.previousNode;
+    }
+    ```
+**Advantages of Doubly Linked List**
+  - a doubly linked list can be traversed both directions: forward and backward
+  - the remove operation is more efficient if the node is given
+  - for singly linked lists, you need the previous node.
+  - to find it, you need to traverse the whole list
+    - to remove a node from a singly linked list, you need the node + predecessor
+    - to remove a node from a doubly linked list, you need the node 
+  
+
+**Collectoins**
+- Iterable
+  - Collection 
+    - List
+      - ArrayList
+      - LinkedList - can implement queue and deque
+      - Vector
+        - Stack
+    - Queue
+      - Deque
+      - ArrayDeque
+      - PriorityQueue
+    - Set 
+      - Hashset
+      - LinkedHashSet
+      - SortedSet
+      - TreeSet
+
+**Real World practical applications of Linked List**
+- Operating system uses almost all the important data structures.
+  - Low level memory management 
+    - Linked lists are important in low level memory management when dealing with C programming 
+      - malloc() : allocate memory into heap
+      - free() : free the memory 
+    - With these built-in functions, we can manipulate the heap memory
+      - char * char_ptr = (char*)malloc(30); // allocates 30 bytes of memory in the heap
+    - Header  -> Header -> Header
+    - B       -> B      -> B
+    - O       -> O      -> O
+    - D       -> D      -> D
+    - Y       -> Y      -> Y
+  - For more info, go to [this link](https://wiki.syslinux.org/wiki/index.php?title=Heap_Management).
+- Windows application 
+  - Alt + tab
+  - All the tabs are linked together with linked list
+- PhotoViewer - images are linked together
+- Blockchains (bitCoin) - blockchain is basically a simple linked list where blocks are cryptographically linked together.
+  - So the blockchain itself is a linked list with hash pointers
+  - Every node in the blockchain has 2 hash values
+    - Own hash
+    - Hash value of the previous block 
 ### References
 
 - Data Structures in Java - Part I (+INTERVIEW QUESTIONS) , https://www.udemy.com/course/algorithms-and-data-structures/
+- Java Comparable Interface, https://www.javatpoint.com/Comparable-interface-in-collection-framework
 - 
 - 
  

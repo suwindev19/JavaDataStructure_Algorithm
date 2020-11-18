@@ -64,10 +64,10 @@ Memory Management
     Insert at the end       O(n)                     O(1)
     Waste space             O(n)                     0
  */
-public class LinkedList {
+public class LinkedList1 {
     Node head;
 
-    public  LinkedList() {
+    public LinkedList1() {
         this.head = null;
     }
 

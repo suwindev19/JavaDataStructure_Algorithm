@@ -75,9 +75,23 @@ The data structure and algorithms concepts and theories, and java methods, core 
     - Tower of Hanoi
     - Depth First Search based traversals(DFS of graph, Inorder, Preorder and Postorder traversal of tree)
       - Finding folders, or files in computer - DFS 
+- **Recursive call visualisation :**
+  - <img src="./img/recursion_R3_recursive_tree.PNG" alt="recursion_R3_recursive_tree" />
 
+- **Tail Recursion and Tail call elimination :** 
+  - In traditional recursion, the typical model is that you perform your recursive calls first, and then you take the return value of the recursive call and calculate the result. In this manner, you don't get the result of your calculation until you have returned from every recursive call.
+  - In tail recursion, you perform your calculations first, and then you execute the recursive call, passing the results of your current step to the next recursive step. This results in the last statement being in the form of (return (recursive-function params)). Basically, the return value of any given recursive step is the same as the return value of the next recursive call. [What is tail recursion?, StackOverflow](https://stackoverflow.com/questions/33923/what-is-tail-recursion)
+  - Tail recursion is favoured since it takes less time and less auxillary space.
+
+  <img src="./img/recursion_R7_tailRecursion.PNG" alt="tailRecursion" />
+
+- **Quicksort and DFS (Preorder, order) :**
+  - Quicksort is faster than mergesort due to tail recursion 
+  - DFS (preorder, inorder) => tail recursive , Therefore preorder and inorder traversals should be preferred over postorder.
+  - DFS (postorder) => Not tail recursive
 ## References
 
+- DSA-Self Paced with Doubt Assistance, GeeksForGeeks, https://practice.geeksforgeeks.org/courses/dsa-doubt-assistance?vC=1
 - Data Structures in Java - Part I (+INTERVIEW QUESTIONS) , https://www.udemy.com/course/algorithms-and-data-structures/
 - Nick White YouTube channel, https://www.youtube.com/watch?v=U6-X_QOwPcs&list=PLU_sdQYzUj2keVENTP0a5rdykRSgg9Wp-
 - Kevin Naughton Jr YouTubr channel, https://www.youtube.com/c/KevinNaughtonJr/playlists

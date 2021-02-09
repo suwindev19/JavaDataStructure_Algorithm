@@ -89,6 +89,11 @@ The data structure and algorithms concepts and theories, and java methods, core 
   - Quicksort is faster than mergesort due to tail recursion 
   - DFS (preorder, inorder) => tail recursive , Therefore preorder and inorder traversals should be preferred over postorder.
   - DFS (postorder) => Not tail recursive
+
+- **Writing base cases :**
+  - To prevent stackoverflow error in Java 
+
+
 ## References
 
 - DSA-Self Paced with Doubt Assistance, GeeksForGeeks, https://practice.geeksforgeeks.org/courses/dsa-doubt-assistance?vC=1

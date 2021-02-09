@@ -1,6 +1,4 @@
-package youTube;
-
-import java.util.Arrays;
+package leetCode;
 
 public class lc_SelectionSort {
     public static void main(String[] args) {

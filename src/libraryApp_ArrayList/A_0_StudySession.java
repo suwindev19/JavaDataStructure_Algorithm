@@ -1,4 +1,4 @@
-package libraryApp;
+package libraryApp_ArrayList;
 
 import java.util.ArrayList;
 import java.util.Scanner;

@@ -1,7 +1,6 @@
-package libraryApp;
+package libraryApp_ArrayList;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.regex.*;
 

@@ -26,6 +26,7 @@ public class A_CommonElements {
         }
 
         // Insertion sort algorithm for source1[ ]
+        // Insertion sort
         int d, key1, count1 = 0;
         for (int c = 0; c < source2.length; c++) {
             key1 = source2[c];

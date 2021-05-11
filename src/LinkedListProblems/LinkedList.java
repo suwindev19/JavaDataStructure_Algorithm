@@ -1,6 +1,6 @@
 package LinkedListProblems;
 
-public class LinkedList {
+public class LinkedList<I extends Number> {
     Node head;
 
     public void insertAtStart(int data) {
@@ -54,7 +54,7 @@ public class LinkedList {
         temp1.next = temp2;
     }
 
-    public void deleteFromFirst(LinkedList list) {
+    public void deleteFromFirst(LinkedList<Number> list) {
         if (head == null) {
             System.out.println("LinkedList is empty. Nothing to delete");
         } else {

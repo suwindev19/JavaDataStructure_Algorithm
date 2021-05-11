@@ -2,7 +2,7 @@ package LinkedListProblems;
 
 public class LinkedList_Driver {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList<Number> list = new LinkedList<Number>();
         list.insertAtStart(2);
         list.insertAtStart(3);
         list.insertAtStart(5);

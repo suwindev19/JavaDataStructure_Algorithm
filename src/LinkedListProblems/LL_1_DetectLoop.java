@@ -2,7 +2,7 @@ package LinkedListProblems;
 
 public class LL_1_DetectLoop {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList<Number> list = new LinkedList<Number>();
         list.insertAtStart(10); // t0
         Node t1 = list.insertAtLastNode(20);
         Node t2 = list.insertAtLastNode(30);
@@ -13,7 +13,7 @@ public class LL_1_DetectLoop {
 
     }
 
-    public static boolean detectLoop(LinkedList list) {
+    public static boolean detectLoop(LinkedList<Number> list) {
         boolean hasLoop = false;
         Node slow = list.head;
         Node fast = list.head;

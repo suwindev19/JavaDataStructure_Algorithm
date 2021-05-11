@@ -17,6 +17,15 @@ output No
 input {}[()]
 output yes
 
+Collection
+
+List        Queue
+
+Vector      Deque
+
+Stack       ArrayDeque
+
+
  */
 public class BalancedParenthesis {
     public static void main(String[] args) {

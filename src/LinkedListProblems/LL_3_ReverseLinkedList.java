@@ -2,7 +2,7 @@ package LinkedListProblems;
 
 public class LL_3_ReverseLinkedList {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList<Number> list = new LinkedList<Number>();
         list.insertAtStart(10);
         Node t2 = list.insertAtLastNode(20);
         Node t3 = list.insertAtLastNode(30);
@@ -17,7 +17,7 @@ public class LL_3_ReverseLinkedList {
 
     }
 
-    private static Node reverseList(LinkedList list) {
+    private static Node reverseList(LinkedList<Number> list) {
         Node current = list.head;
         Node previous = null;
 

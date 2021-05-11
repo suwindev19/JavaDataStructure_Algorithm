@@ -2,7 +2,7 @@ package LinkedListProblems;
 
 public class LL_2_LoopStartingPoint {
     public static void main(String[] args) {
-        LinkedList list = new LinkedList();
+        LinkedList<Number> list = new LinkedList<Number>();
         list.insertAtStart(10);
         Node t2 = list.insertAtLastNode(20);
         Node t3 = list.insertAtLastNode(30);
@@ -12,7 +12,7 @@ public class LL_2_LoopStartingPoint {
         System.out.println(detectLoopAndReturnNode(list).data);
     }
 
-    public static Node detectLoopAndReturnNode(LinkedList list) {
+    public static Node detectLoopAndReturnNode(LinkedList<Number> list) {
         boolean hasLoop = false;
         Node slow = list.head;
         Node fast = list.head;

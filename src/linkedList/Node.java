@@ -9,5 +9,6 @@ public class Node {
         this.nextNode = null;
     }
 
-
 }
+
+
